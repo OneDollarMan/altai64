@@ -18,4 +18,4 @@ def callback():
     abort(401)
 
 def run_server():
-    app.run(host='127.0.0.1', port=80)
+    app.run()
