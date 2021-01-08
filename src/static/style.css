@@ -120,7 +120,6 @@ td:hover {
 
 #order_div {
 	border-radius: 4pt;
-	padding: 10pt;
 	background: white;
 	min-width: 300pt;
 	margin: auto;
@@ -128,14 +127,18 @@ td:hover {
 }
 
 .order_h2 {
+	text-align: center;
 	font-weight: 400;
 	font-size: 25pt;
-	margin: 10pt;
 }
 
+#order_h2_div {
+	border-bottom: 1px solid black;
+	padding: 20pt;
+}
 .form_class {
 	display: table;
-	margin: 10pt auto;
+	margin: 0 auto 20pt;
 }
 
 .form_label {
@@ -158,10 +161,8 @@ td:hover {
 	cursor: pointer;
 }
 
-label {
-	color: grey;
-	font-weight: 300;
-	font-size: 12pt; 
+#order_form {
+	margin: 20pt;
 }
 
 .input_order {
