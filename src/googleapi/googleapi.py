@@ -22,8 +22,8 @@ class Api:
         # The file token.pickle stores the user's access and refresh tokens, and is
         # created automatically when the authorization flow completes for the first
         # time.
-        if os.path.exists('token.pickle'):
-            with open('token.pickle', 'rb') as token:
+        if os.path.exists('../webserver/token.pickle'):
+            with open('../webserver/token.pickle', 'rb') as token:
                 creds = pickle.load(token)
         # If there are no (valid) credentials available, let the user log in.
         if not creds or not creds.valid:
@@ -31,10 +31,10 @@ class Api:
                 creds.refresh(Request())
             else:
                 flow = InstalledAppFlow.from_client_secrets_file(
-                    'credentials.json', self.SCOPES)
+                    '../webserver/credentials.json', self.SCOPES)
                 creds = flow.run_local_server(port=8080)
             # Save the credentials for the next run
-            with open('token.pickle', 'wb') as token:
+            with open('../webserver/token.pickle', 'wb') as token:
                 pickle.dump(creds, token)
 
         self.service = build('sheets', 'v4', credentials=creds)
