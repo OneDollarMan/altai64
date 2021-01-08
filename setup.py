@@ -4,6 +4,7 @@ from os.path import join, dirname
 setup(
     name='altai64',
     version='0.1',
+    package_dir={'': 'altai64'},
     packages=find_packages('altai64'),
     long_description=open(join(dirname(__file__), 'README.txt')).read(),
     entry_points={
