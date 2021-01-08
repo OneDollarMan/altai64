@@ -15,6 +15,7 @@ setup(
         'Flask==1.1.2',
         'google-api-python-client==1.12.8',
         'google-auth-oauthlib==0.4.2',
-        'google==3.0.0'
+        'google==3.0.0',
+        'requests'
     ]
 )
