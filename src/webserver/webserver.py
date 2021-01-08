@@ -1,6 +1,6 @@
 from flask import Flask, url_for, render_template, request, redirect
-from googleapi import Api
-from notification import Notification
+from .googleapi import Api
+from .notification import Notification
 app = Flask(__name__)
 api = Api()
 n = Notification('1599455363:AAFjvwD5L6DUd6ky14s95tQNSrnao5pafto')
