@@ -1,3 +1,0 @@
-[console_scripts]
-startweb = webserver.webserver:run_server
-

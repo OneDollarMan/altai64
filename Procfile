@@ -1,1 +1,1 @@
-web: startweb
+web: gunicorn wsgi:app
