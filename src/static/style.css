@@ -310,3 +310,15 @@ footer {
 	margin: 0 auto;
 	display: table;
 }
+
+@media screen and (max-width: 1080px) {
+
+	body {
+		font-size: 1.5em;
+	}
+
+	#text2, #text3 {
+		padding: 20pt 5%;
+	}
+	
+}
