@@ -1,5 +1,6 @@
 google
 requests
-Flask gunicorn
+Flask
+gunicorn
 google-api-python-client
 google-auth-oauthlib
