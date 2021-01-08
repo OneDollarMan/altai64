@@ -5,7 +5,7 @@ setup(
     name='webserver',
     version='0.1',
     package_dir={'': 'src'},
-    packages=find_packages('src'),
+    packages=['googleapi', 'notification'],
     long_description=open(join(dirname(__file__), 'README.txt')).read(),
     entry_points={
         'console_scripts':
