@@ -1,0 +1,13 @@
+README.txt
+setup.py
+altai64/__init__.py
+altai64/googleapi.py
+altai64/notification.py
+altai64/webserver.py
+altai64.egg-info/PKG-INFO
+altai64.egg-info/SOURCES.txt
+altai64.egg-info/dependency_links.txt
+altai64.egg-info/top_level.txt
+venv/__init__.py
+venv/bin/__init__.py
+venv/lib/__init__.py
