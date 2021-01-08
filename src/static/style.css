@@ -103,6 +103,20 @@ td:hover {
 	cursor: pointer;
 }
 
+#header_menu {
+	width: auto;
+	margin: auto 15pt auto 0;
+	display: none;
+}
+
+.menu {
+	margin-left: auto;
+	background: black;
+	height: 5pt;
+	width: 35pt;
+	margin-bottom: 6pt;
+}
+
 #order_id {
 	z-index: 100;
 	position: fixed;
@@ -318,6 +332,10 @@ footer {
 
 	#header_catalog, #header_number {
 		display: none;
+	}
+
+	#header_menu {
+		display: block;
 	}
 
 	#text2, #text3, footer {
