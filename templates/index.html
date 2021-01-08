@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Здоровье Алтая — магазин эко-товаров, Саратов</title>
+		<link rel="stylesheet" href="static/style.css">
+		<script type="text/javascript" src="static/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="header_block">
+				<a class="a_logo" href=""><img src="static/img/logo.png"></a>
+			</div>
+
+			<div class="header_block">
+				<table>
+					<tbody>
+						<tr>
+							<td><a href="https://altailife.ru/catalog/">Перейти в каталог</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="header_block">
+				<div class="p_number">
+					<a rel="nofollow" href="tel:88007000995">8 (800) 700-09-95</a>
+					<button class="call_button" onclick="show_order()">Заказать звонок</button>
+				</div>
+			</div>
+		</header>
+
+		<div id="order_id">
+			<div id="order_background" onclick="close_order()"></div>
+			<div id="order_div">
+				<div id="order_h2_div">
+					<h2 class="order_h2">Заказать звонок</h2>
+				</div>
+				<div id="order_form">
+					<form method="POST" action="/sendcallback">
+						<div class="form_class">
+							<label class="form_label">Телефон</label><br>
+							<input class="input_order" type="text" name="phone" id="phone"><br>
+						</div>
+						<div class="form_class">
+							<label class="form_label">Как к Вам обращаться?</label><br>
+							<input class="input_order" type="text" name="name" id="name"><br>
+						</div>
+						<div class="form_class">
+							<button class="form_button" type="submit">Оставить заявку</button>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+		</div>
+
+		<div id="content">
+			<div id="intro">
+				<div id="intro_opacity"></div>
+				<div id="intro_border"></div>
+				<div id="intro_text">
+					Встречайте! <br> Здоровье Алтая в Саратове
+					<div id="text1">
+						<h2 class="text1_h2">Оформите заказ онлайн</h2>
+						<div id="form_div">
+							<input type="text" id="number" placeholder="Введите ваш телефон" class="input_number">
+							<button name="submit" class="input_button" onclick="show_order()">Оставить заявку</button>
+						</div>
+						<div class="text1_disclaimer">Актуальные цены доступны в <a class="a_disc" href="https://altailife.ru/catalog/">каталоге</a> товаров. <br> Наличие в Саратове уточняйте у продавца-консультанта</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="text2">
+				<h1>Как мы работаем</h1>
+				1. Зайдите в каталог товаров, ознакомьтесь с товарами и ценами, выберите нужное.<br><br>
+				2. Заказ можно сделать по телефону, указанному на сайте, или оставить заявку, и продавец-консультант свяжется с вами и уточнит детали заказа. <br><br>
+				3. Выберите способ получения заказа: самовывозом из одного из наших магазинов, либо доставкой курьером Яндекса по его тарифам.<br><br>
+				4. Вы осуществляете оплату заказа по нашим реквизитам. <br><br>
+				5. При наличии товара в наших магазинах вы получаете заказ в тот же день. При отсутствии товара в Саратове срок доставки увеличивается до 3-4 дней.<br><br>
+			</div>
+
+			<div id="text3">
+				<h1>Наши магазины</h1>
+				1. Рынок "Солнечный", ул. Им. Тархова С.Ф., 29а/1, цокольный этаж <br><br>
+				2. Рынок "Крытый", ул. Им. Чапаева В.И., 59 <br><br>
+				3. "Оранжевый базар", пл. Им. Орджоникидзе Г.К., 1 <br><br>
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer_info" class="header_block">
+				<div>2021 © "Здоровье Алтая"</div>
+				ИП Скориков В.С. <br> ИНН 643908219500 <br> ОГРНИП 320645100062942
+			</div>
+			<div id="footer_logo" class="header_block">
+				<a href="https://altailife.ru/"><img src="static/img/logo.png" class="right_float"></a>
+			</div>
+		</footer>
+	</body>
+</html>

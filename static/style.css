@@ -1,0 +1,306 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+@keyframes opacity-animation {
+  0%   { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+@keyframes call-button-animation {
+	0% { background: transparent; }
+  100% { color: white; background: #399f00; }
+}
+
+@keyframes input-button-animation {
+	0% { border: 1px solid #212326; background: #212326; }
+  100% { border: 1px solid black; background: black; }
+}
+
+header {
+	z-index: 10;
+	position: absolute;
+	width: 100%; 
+	height: 60pt;
+	display: flex;
+	line-height: 57pt;
+	font-weight: 700;
+}
+
+.header_block {
+	width: 100%;
+}
+
+.a_logo {
+	display: inline-block;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	opacity: 0.5;
+	animation: opacity-animation .2s;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+table {
+	margin: 0 auto;
+	border-spacing: 20pt 0;
+}
+
+tbody {
+}
+
+td {
+	height: 100%;
+	line-height: 57pt;
+}
+
+td a {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+td:hover {
+	color: #3e8c12;
+}
+
+.p_number {
+	margin-right: 20pt;
+	text-align: right;
+}
+
+.p_number::before {
+	margin-right: 5pt;
+	content: url(img/phone.svg);
+}
+
+.call_button {
+	background: transparent;
+	margin-left: 10pt;
+	padding: 5pt 10pt;
+	border: 1px solid #399f00;
+	border-radius: 2pt;
+	font-size: 10pt;
+	color: #399f00;
+}
+
+.call_button:hover {
+	animation: call-button-animation .2s;
+	background: #399f00;
+	color: white;
+	cursor: pointer;
+}
+
+#order_id {
+	z-index: 100;
+	position: fixed;
+	display: none;
+	height: 100vh;
+	width: 100vw;
+}
+
+#order_background {
+	background: rgba(0, 0, 0, 0.5);
+	height: inherit;
+	width: 100%;
+	position: absolute;
+}
+
+#order_div {
+	border-radius: 4pt;
+	padding: 10pt;
+	background: white;
+	min-width: 300pt;
+	margin: auto;
+	z-index: 100;
+}
+
+.order_h2 {
+	font-weight: 400;
+	font-size: 25pt;
+	margin: 10pt;
+}
+
+.form_class {
+	display: table;
+	margin: 10pt auto;
+}
+
+.form_label {
+	margin: 5pt 0;
+}
+
+.form_button {
+	background: transparent;
+	padding: 5pt 10pt;
+	border: 1px solid #399f00;
+	border-radius: 2pt;
+	font-size: 12pt;
+	color: #399f00;
+}
+
+.form_button:hover {
+	animation: call-button-animation .2s;
+	background: #399f00;
+	color: white;
+	cursor: pointer;
+}
+
+label {
+	color: grey;
+	font-weight: 300;
+	font-size: 12pt; 
+}
+
+.input_order {
+	background: white;
+	padding: 5pt 10pt; 
+	font-size: 12pt;
+	border-radius: 3pt;
+	border: 1px solid black;
+}
+
+.input_order:hover {
+	outline: none;
+}
+
+.input_order:focus {
+	outline: none;
+}
+
+#intro {
+	display: grid;
+	height: 100vh;
+	background: no-repeat top/cover url(img/kucherlinskoe.jpg);
+}
+
+#intro_opacity {
+	background: rgba(255, 255, 255, 0.2);
+	height: inherit;
+	width: 100%;
+	position: absolute;
+}
+
+#intro_text {
+	z-index: 9;
+	text-align: center;
+	font-size: 40pt; 
+	font-weight: 700;
+	margin-top: 100pt;
+}
+
+#intro_border {
+	position: absolute;
+	margin: 0 45%;
+	width: 10%;
+	height: 95%;
+	border-bottom: 5pt solid black;
+}
+
+#text1 {
+	display: grid;
+	margin: 0 auto;
+}
+
+.text1_h2 {
+	font-weight: 400;
+	font-size: 25pt;
+	margin: 10pt auto 5pt;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+	margin-bottom: 10pt;
+}
+
+h2 {
+	margin: 0;
+}
+
+#form_div {
+}
+
+.text1_disclaimer {
+	font-weight: 400;
+	margin: 15pt auto;
+	text-align: center;
+	font-size: 10pt;
+	color: black;
+}
+
+.a_disc {
+	text-decoration: underline;
+}
+
+.input_number {
+	background: white;
+	padding: 10pt 20pt; 
+	font-size: 12pt;
+	border-radius: 3pt;
+	border: 1px solid white;
+}
+
+.input_number:hover {
+	outline: none;
+}
+
+.input_number:focus {
+	outline: none;
+}
+
+.input_button {
+	background: #212326;
+	margin-left: 5pt;
+	padding: 10pt 20pt; 
+	font-size: 12pt;
+	border-radius: 3pt;
+	border: 1px solid #212326;
+	color: white;
+}
+
+.input_button:hover {
+	animation: input-button-animation .2s;
+	cursor: pointer;
+	background: black;
+	border: 1px solid black;
+}
+
+#text2 {
+	line-height: 1.5;
+	background: white;
+	z-index: 10;
+	padding: 20pt 25%;
+}
+
+#text3 {
+	line-height: 1.5;
+	padding: 20pt 25%;
+}
+
+footer {
+	font-weight: 300;
+	background: #f6f6f7; 
+	padding: 20pt 15%;
+	display: flex;
+}
+
+#footer_info {
+	margin: auto;
+}
+
+.right_float {
+	float: right;
+}
