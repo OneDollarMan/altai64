@@ -1,0 +1,3 @@
+[console_scripts]
+startweb = altai64.webserver:run_server
+

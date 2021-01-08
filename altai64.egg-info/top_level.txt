@@ -1,2 +1,0 @@
-altai64
-venv
