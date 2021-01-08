@@ -5,7 +5,7 @@ setup(
     name='altai64',
     version='0.1',
     package_dir={'': 'src'},
-    packages=find_packages('altai64'),
+    packages=find_packages('src'),
     long_description=open(join(dirname(__file__), 'README.txt')).read(),
     entry_points={
         'console_scripts':
