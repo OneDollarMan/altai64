@@ -305,3 +305,8 @@ footer {
 .right_float {
 	float: right;
 }
+
+#map {
+	margin: 0 auto;
+	display: table;
+}
