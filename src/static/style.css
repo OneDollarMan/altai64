@@ -121,7 +121,6 @@ td:hover {
 #order_div {
 	border-radius: 4pt;
 	background: white;
-	min-width: 300pt;
 	margin: auto;
 	z-index: 100;
 }
@@ -317,8 +316,12 @@ footer {
 		font-size: 1.5em;
 	}
 
-	#text2, #text3 {
+	#header_catalog, #header_number {
+		display: none;
+	}
+
+	#text2, #text3, footer {
 		padding: 20pt 5%;
 	}
-	
+
 }
