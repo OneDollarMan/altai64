@@ -14,6 +14,6 @@ setup(
     install_requires=[
         'Flask==1.1.2',
         'google-api-python-client==1.12.8',
-        'google=3.0.0'
+        'google==3.0.0'
     ]
 )
