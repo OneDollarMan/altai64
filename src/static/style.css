@@ -343,3 +343,32 @@ footer {
 	}
 
 }
+
+@media screen and (max-width: 500px) {
+
+	#form_div {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#intro_text {
+		font-size: 30pt;
+	}
+
+	.text1_h2 {
+		font-size: 22pt;
+		margin: 10pt 5pt;
+	}
+
+	.input_number {
+		width: 100%;
+		margin: 0 5pt;
+		margin-bottom: 5pt;
+	}
+
+	.input_button {
+		margin-right: 5pt;
+		width: 100%;
+	}
+
+}
