@@ -294,7 +294,7 @@ h2 {
 
 #text2 {
 	line-height: 1.5;
-	background: white;
+	background: #f6f6f7;
 	z-index: 10;
 	padding: 20pt 25%;
 }
@@ -319,9 +319,30 @@ footer {
 	float: right;
 }
 
-#map {
-	margin: 0 auto;
-	display: table;
+#text_prod {
+	background: white;
+	padding: 20pt 25%;
+}
+
+#prod_grid {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+}
+
+.prod_class {
+	text-align: center;
+	overflow: hidden;
+	padding: 5pt;
+}
+
+.prod_class_text {
+	color: black;
+}
+
+.prod_class img {
+	width: 100%;
+	border-radius: 200pt;
+	border: 1px solid black;
 }
 
 @media screen and (max-width: 1080px) {
@@ -338,7 +359,7 @@ footer {
 		display: block;
 	}
 
-	#text2, #text3, footer {
+	#text2, #text3, #text_prod, footer {
 		padding: 20pt 5%;
 	}
 
@@ -374,6 +395,10 @@ footer {
 	.text1_disclaimer {
 		font-size: 12pt;
 		margin: 15pt 10pt;
+	}
+
+	#prod_grid {
+		grid-template-columns: 50% 50%;
 	}
 
 }
