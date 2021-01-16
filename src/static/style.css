@@ -218,9 +218,10 @@ td:hover {
 
 .intro_arrow {
 	position: absolute;
-	width: 10%;
+	height: 3%;
+	width: 5%;
 	bottom: 0;
-	margin: 10pt 45%;
+	margin: 10pt 47.5%;
 }
 
 #text1 {
