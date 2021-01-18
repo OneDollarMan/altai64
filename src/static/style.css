@@ -25,7 +25,7 @@ header {
 	width: 100%; 
 	height: 80pt;
 	display: flex;
-	line-height: 77pt;
+	line-height: 80pt;
 	font-weight: 700;
 	font-size: 14pt;
 }
@@ -45,7 +45,7 @@ a {
 }
 
 a:hover {
-	opacity: 0.5;
+	opacity: 0.6;
 	animation: opacity-animation .2s;
 }
 
@@ -64,7 +64,7 @@ tbody {
 
 td {
 	height: 100%;
-	line-height: 77pt;
+	border-bottom: 2px solid #58c61b;
 }
 
 td a {
@@ -74,6 +74,7 @@ td a {
 }
 
 td:hover {
+	opacity: 0.6;
 	color: #3e8c12;
 }
 
@@ -108,6 +109,20 @@ td:hover {
 	width: auto;
 	margin: auto 15pt auto 0;
 	display: none;
+}
+
+#mobile_menu {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	display: none;
+	background: white;
+}
+
+.mobile_menu_block {
+	line-height: normal;
+	padding: 10pt 20pt;
+	
 }
 
 .menu {
@@ -196,7 +211,8 @@ td:hover {
 }
 
 #intro {
-	display: grid;
+	display: flex;
+	justify-content: center;
 	height: 100vh;
 	background: no-repeat top/cover url(img/kucherlinskoe.jpg);
 }
@@ -213,15 +229,15 @@ td:hover {
 	text-align: center;
 	font-size: 40pt; 
 	font-weight: 700;
-	margin-top: 100pt;
+	margin-top: 140pt;
+	color: black;
 }
 
 .intro_arrow {
 	position: absolute;
-	height: 3%;
-	width: 5%;
+	height: 50pt;
 	bottom: 0;
-	margin: 10pt 47.5%;
+	margin: 20pt;
 }
 
 #text1 {
@@ -252,7 +268,7 @@ h2 {
 	font-weight: 400;
 	margin: 15pt auto;
 	text-align: center;
-	font-size: 10pt;
+	font-size: 11pt;
 	color: black;
 }
 
@@ -343,7 +359,7 @@ footer {
 .prod_class img {
 	width: 100%;
 	border-radius: 200pt;
-	border: 2px solid grey;
+	border: 2px solid #58c61b;
 }
 
 @media screen and (max-width: 1080px) {

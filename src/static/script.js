@@ -6,3 +6,7 @@ function show_order() {
 function close_order() {
 	order_id.style.display = "none";
 }
+
+function show_menu() {
+	mobile_menu.style.display = "block";
+}
