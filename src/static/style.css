@@ -122,7 +122,7 @@ td:hover {
 .mobile_menu_block {
 	line-height: normal;
 	padding: 10pt 20pt;
-	
+
 }
 
 .menu {
@@ -235,7 +235,7 @@ td:hover {
 
 .intro_arrow {
 	position: absolute;
-	height: 50pt;
+	height: 5vh;
 	bottom: 0;
 	margin: 20pt;
 }
