@@ -31,7 +31,7 @@ class Api:
                 creds.refresh(Request())
             else:
                 flow = InstalledAppFlow.from_client_secrets_file(
-                    'src/webserver/credentials.json', self.SCOPES)
+                    'src/credentials.json', self.SCOPES)
                 creds = flow.run_local_server(port=8080)
             # Save the credentials for the next run
             with open('token.pickle', 'wb') as token:
