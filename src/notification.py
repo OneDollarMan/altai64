@@ -25,4 +25,4 @@ class Notification:
             return self.get_result[-1]
 
     def send_n(self, name, phone):
-        self.send(chat_id=296438055, text='Новая заявка: ' + phone + ', ' + name)
+        self.send(chat_id=1578317394, text='Новая заявка: ' + phone + ', ' + name)
