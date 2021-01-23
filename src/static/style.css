@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+	font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Montserrat, sans-serif;
 }
 
 @keyframes opacity-animation {
