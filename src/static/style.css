@@ -123,7 +123,7 @@ td a:hover {
 
 #header_menu {
 	width: auto;
-	margin: auto 15pt auto 0;
+	margin: 15pt 15pt auto 0;
 	display: none;
 }
 
@@ -232,6 +232,7 @@ td a:hover {
 	justify-content: center;
 	height: 100vh;
 	background: no-repeat top/cover url(img/kucherlinskoe.jpg);
+	overflow: hidden;
 }
 
 #intro_opacity {
@@ -379,7 +380,7 @@ footer {
 	border: 2px solid #58c61b;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
 
 	body {
 		font-size: 1em;
@@ -437,6 +438,10 @@ footer {
 
 	#prod_grid {
 		grid-template-columns: 50% 50%;
+	}
+
+	#intro_text {
+	margin-top: 50pt;
 	}
 
 }
