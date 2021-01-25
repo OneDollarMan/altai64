@@ -385,6 +385,10 @@ footer {
 		font-size: 1em;
 	}
 
+	header {
+	    height: 40pt;
+	}
+
 	#header_catalog, #header_number {
 		display: none;
 	}
