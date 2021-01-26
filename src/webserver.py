@@ -5,9 +5,11 @@ app = Flask(__name__)
 api = Api()
 n = Notification('1599455363:AAFjvwD5L6DUd6ky14s95tQNSrnao5pafto')
 
+
 @app.route("/")
 def index():
     return render_template('index.html')
+
 
 @app.route("/sendcallback", methods=['POST'])
 def callback():

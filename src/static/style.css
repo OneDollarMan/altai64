@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Montserrat, sans-serif;
+	font-family: Circular, -apple-system, BlinkMacSystemFont, Montserrat, sans-serif;
 }
 
 @keyframes opacity-animation {
@@ -110,7 +110,7 @@ td a:hover {
 	border: 1px solid #399f00;
 	border-radius: 2pt;
 	font-size: 12pt;
-	font-weight: 900;
+	font-weight: 500;
 	color: #399f00;
 }
 
