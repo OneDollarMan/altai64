@@ -83,17 +83,11 @@
 				<div id="order_h2_div">
 					<h2 class="order_h2">Заказать звонок</h2>
 				</div>
-				<div id="order_form">
-					<form method="POST" action="/sendcallback">
-						<div class="form_class">
-							<input class="input_order" type="text" name="phone" id="phone" placeholder="Ваш номер телефона"><br>
-						</div>
-						<div class="form_class">
-							<input class="input_order" type="text" name="name" id="name" placeholder="Как к Вам обращаться?"><br>
-						</div>
-						<div class="form_class">
-							<button class="form_button" type="submit">Оставить заявку</button>
-						</div>
+				<div id="order_form_div">
+					<form method="POST" action="/sendcallback" class="order_form">
+						<input class="input_order" type="text" name="phone" id="phone" placeholder="Ваш номер телефона"><br>
+						<input class="input_order" type="text" name="name" id="name" placeholder="Как к Вам обращаться?"><br>
+						<button class="form_button" type="submit">Оставить заявку</button>
 					</form>
 				</div>
 				
