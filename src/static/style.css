@@ -125,9 +125,9 @@ td a:hover {
 	cursor: pointer;
 }
 
-#header_menu {
+.header_menu {
 	width: auto;
-	margin: 15pt 15pt auto 0;
+	padding: 15pt 15pt 11pt 0;
 	display: none;
 }
 
@@ -142,15 +142,16 @@ td a:hover {
 .mobile_menu_block {
 	line-height: normal;
 	padding: 10pt 20pt;
+	border-bottom: 1px solid #FBFBFB;
 
 }
 
 .menu {
 	margin-left: auto;
 	background: black;
-	height: 5pt;
-	width: 35pt;
-	margin-bottom: 6pt;
+	height: 2pt;
+	width: 20pt;
+	margin-bottom: 4pt;
 }
 
 #order_id {
@@ -182,8 +183,18 @@ td a:hover {
 }
 
 #order_h2_div {
-	border-bottom: 1px solid black;
+    border-bottom: 2px solid #4a9513;
 	padding: 20pt;
+	display: flex;
+}
+
+.order_header_child {
+}
+
+#close_div {
+    cursor: pointer;
+    margin: auto 0 auto 20pt;
+    font-size: 20pt;
 }
 
 .form_label {
@@ -257,7 +268,7 @@ td a:hover {
 	text-align: center;
 	font-size: 40pt; 
 	font-weight: 700;
-	margin-top: 140pt;
+	margin: 140pt 10pt;
 	color: #1e5600;
 }
 
@@ -403,7 +414,7 @@ footer {
 		display: none;
 	}
 
-	#header_menu {
+	.header_menu {
 		display: block;
 	}
 

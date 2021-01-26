@@ -35,6 +35,10 @@
 			function show_menu() {
 				mobile_menu.style.display = "block";
 			}
+
+			function close_menu() {
+				mobile_menu.style.display = "none";
+			}
 		</script>
 	</head>
 	<body>
@@ -54,25 +58,30 @@
 			</div>
 			<div class="header_block" id="header_number">
 				<div class="p_number">
-					<a rel="nofollow" href="tel:88007000995">8 (927) 059-91-09</a>
+					<a rel="nofollow" href="tel:89270599109">8 (927) 059-91-09</a>
 					<button class="call_button" onclick="show_order()">Заказать звонок</button>
 				</div>
 			</div>
-			<div class="header_block" id="header_menu" onclick="show_menu()">
+			<div class="header_block header_menu" onclick="show_menu()">
 				<div class="menu"></div>
 				<div class="menu"></div>
 				<div class="menu"></div>
 			</div>
 
 			<div id="mobile_menu">
+				<div class="header_menu" onclick="close_menu()" style="background: #FBFBFB">
+					<div class="menu"></div>
+					<div class="menu"></div>
+					<div class="menu"></div>
+				</div>
 				<div class="mobile_menu_block">
 					<a href="https://altailife.ru/catalog/">Вход в каталог товаров</a>
 				</div>
 				<div class="mobile_menu_block">
-					<a rel="nofollow" href="tel:88007000995">8 (927) 059-91-09</a>
+					<span onclick="show_order()">Заказать звонок</span>
 				</div>
 				<div class="mobile_menu_block">
-					<button class="call_button" onclick="show_order()">Заказать звонок</button>
+					<a rel="nofollow" href="tel:89270599109">Наш номер: 8 (927) 059-91-09</a>
 				</div>
 			</div>
 		</header>
@@ -81,7 +90,8 @@
 			<div id="order_background" onclick="close_order()"></div>
 			<div id="order_div">
 				<div id="order_h2_div">
-					<h2 class="order_h2">Заказать звонок</h2>
+					<div class="order_header_child"><h2 class="order_h2">Заказать звонок</h2></div>
+					<div class="order_header_child" id="close_div" onclick="close_order()">✕</div>
 				</div>
 				<div id="order_form_div">
 					<form method="POST" action="/sendcallback" class="order_form">
