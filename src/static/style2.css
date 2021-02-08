@@ -401,6 +401,41 @@ footer {
 	border: 2px solid #58c61b;
 }
 
+#tinkoff_div {
+    background: white;
+    border-radius: 2pt;
+    padding: 10pt;
+    display: table;
+    margin: 0 auto;
+}
+
+.tinkoffPayRow {
+    display: block;
+    margin: 10pt auto;
+    padding: 10pt 20pt;
+    max-width: 200pt;
+    border-radius: 2pt;
+    border: 1px solid grey;
+    font-size: 12pt;
+}
+
+.tinkoffPayRow:focus {
+    outline: none;
+}
+
+.tinkoffButton {
+    border: 1px solid #399f00;
+    background: transparent;
+    color: #399f00;
+    cursor: pointer;
+}
+
+.tinkoffButton:hover {
+    animation: call-button-animation .2s;
+    background: #399f00;
+    color: white;
+}
+
 @media screen and (max-width: 1200px) {
 
 	body {

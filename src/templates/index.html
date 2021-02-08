@@ -39,6 +39,10 @@
 			function close_menu() {
 				mobile_menu.style.display = "none";
 			}
+
+			function am_on_input() {
+				rec_id.value = '{"EmailCompany": "altai64ru@gmail.com","Taxation": "patent","Items": [{"Name": "Оплата заказа на сайте 2алтай64.рф","Price": ' + am_id.value * 100 + ',"Quantity": 1.00,"Amount":' + am_id.value * 100 + ',"Tax": "none"}]}';
+			}
 		</script>
 	</head>
 	<body>
@@ -178,8 +182,25 @@
 				1. В <a class="a_disc" href="https://altailife.ru/catalog/">каталоге</a> товаров можно ознакомиться с товарами и ценами, приметить нужное.<br><br>
 				2. Заказ можно сделать по телефону, указанному на сайте, или оставить заявку, и продавец-консультант свяжется с вами и уточнит детали заказа. <br><br>
 				3. Вы выбираете способ получения заказа: самовывозом из одного из наших магазинов, либо доставкой курьером Яндекса, она оплачивается отдельно по текущему тарифу.<br><br>
-				4. Оплата заказа осуществляется по нашим реквизитам, по номеру телефона или карты на Сбербанк. <br><br>
+				4. Оплата заказа осуществляется в форме ниже, для этого нужно указать сумму и номер заказа, их вам сообщит продавец-консультант, а также почту, куда мы вышлем чек, и телефон. <br><br>
 				5. При наличии товара в наших магазинах вы получаете заказ в тот же день. При отсутствии товара в Саратове срок доставки увеличивается до 3-4 дней.<br><br>
+				<h1>Оплата заказа</h1>
+				<div id="tinkoff_div">
+					<img src="static/img/tinkoff_logo.png">
+					<script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
+					<form name="TinkoffPayForm" onsubmit="pay(this); return false;">
+  						<input class="tinkoffPayRow" type="hidden" name="terminalkey" value="1612417166275">
+  						<input class="tinkoffPayRow" type="hidden" name="frame" value="false">
+  						<input class="tinkoffPayRow" type="hidden" name="language" value="ru">
+						<input class="tinkoffPayRow" type="hidden" name="receipt" id="rec_id" value='{"EmailCompany": "altai64ru@gmail.com","Taxation": "patent","Items": [{"Name": "Оплата заказа на сайте алтай64.рф","Price": 10000,"Quantity": 1.00,
+  "Amount": 10000,"Tax": "none"}]}'>
+    					<input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" name="amount" id="am_id" required onchange="am_on_input()">
+    					<input class="tinkoffPayRow" type="text" placeholder="Номер заказа" name="order" required>
+    					<input class="tinkoffPayRow" type="text" placeholder="E-mail" name="email">
+    					<input class="tinkoffPayRow" type="text" placeholder="Контактный телефон" name="phone" required>
+    					<input class="tinkoffPayRow tinkoffButton" type="submit" value="Оплатить">
+					</form>
+				</div>
 			</div>
 
 			<div id="text3">
