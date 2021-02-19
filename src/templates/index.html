@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title>Здоровье Алтая — сеть магазинов эко-товаров, Саратов</title>
-		<link rel="stylesheet" href="static/style.css">
-		<link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="static/style2.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<meta name="Description" content="Оздоровительная фитопродукция от ведущих производителей Алтая и Сибири"/>
 		<meta name="Keywords" content="лечение суставов, климакс, артериальное давление, варикоз, сашера, эфирные масла, травяной чай, Акация белая, Годжи, Календула лекарственная, Каштан конский, Пармелия, Пихта, Саган-дайля, Стевия, Тмин -масло, Топинамбур -сироп, Тысячелистник, Фенхель, Эвкалипт, Элеутерококк, Почки -лечение, Живица, Алфит, Дигидрокверцетин, бобровая струя, медвежья желчь, чага, Иван-чай, Фитосборы, Амарантовое масло, средства для похудения, травы алтая, средства от аллергии, средства от псориаза, огневка, артроз лечение, простатит лечение, аденома простаты, потенция средство, матка миома, глазные капли, повышенное давление, лечение ног, алтайские травы, лечебная трава, трава купить, чайное дерево масло, травы для чая, мочегонное средство, Аир корень, Бузина, Валериана, Гинкго билоба, Девясил, Мать мачеха, Марал панты, Мох цетрария, Цетрария исландская, исландский мох, лечение печени, мумие -продукция -цена -алтайский -купить, камни +в почках, лечение почек, барсучий жир, мумие +в таблетках, мумие цена, мумие алтайское, мумие купить, кора дуба, масло лопуха, Облепиховое масло, боровая матка, Ортосифон, почечный чай, сон-трава, Полынь, Прострел, Сабельник, Солодка корень, Солодка сироп, масло черного тмина, масло тмина -черный, Топинамбур сироп, Чабрец, капли в нос, Антибактериальные, Противовирусные, Мужские витамины, высокое давление, таблетки от давления, Щитовидная железа лечение, астма лечение, бронхит лечение, лечение поджелудочной, Сахарный диабет лечение, дешевый аналог, аналог лекарств, травяной сбор, лекарственные травы, уход за волосами, Уход за лицом, струя бобров, алтайский мед, Фиточай, Пантовый, активная добавка, бад витамин, кедровый орех, льняное масло, аптека похудение, восстановление коронавирус, мазь для суставов, аллергия лечение, псориаз мазь"/>
@@ -38,6 +38,14 @@
 			function show_menu() {
 				mobile_menu.style.display = "block";
 			}
+
+			function close_menu() {
+				mobile_menu.style.display = "none";
+			}
+
+			function am_on_input() {
+				rec_id.value = '{"EmailCompany": "altai64ru@gmail.com","Taxation": "patent","Items": [{"Name": "Оплата заказа на сайте 2алтай64.рф","Price": ' + am_id.value * 100 + ',"Quantity": 1.00,"Amount":' + am_id.value * 100 + ',"Tax": "none"}]}';
+			}
 		</script>
 	</head>
 	<body>
@@ -57,25 +65,30 @@
 			</div>
 			<div class="header_block" id="header_number">
 				<div class="p_number">
-					<a rel="nofollow" href="tel:88007000995">8 (927) 059-91-09</a>
+					<a rel="nofollow" href="tel:89270599109">8 (927) 059-91-09</a>
 					<button class="call_button" onclick="show_order()">Заказать звонок</button>
 				</div>
 			</div>
-			<div class="header_block" id="header_menu" onclick="show_menu()">
+			<div class="header_block header_menu" onclick="show_menu()">
 				<div class="menu"></div>
 				<div class="menu"></div>
 				<div class="menu"></div>
 			</div>
 
 			<div id="mobile_menu">
+				<div class="header_menu" onclick="close_menu()" style="background: #FBFBFB">
+					<div class="menu"></div>
+					<div class="menu"></div>
+					<div class="menu"></div>
+				</div>
 				<div class="mobile_menu_block">
 					<a href="https://altailife.ru/catalog/">Вход в каталог товаров</a>
 				</div>
 				<div class="mobile_menu_block">
-					<a rel="nofollow" href="tel:88007000995">8 (927) 059-91-09</a>
+					<span onclick="show_order()">Заказать звонок</span>
 				</div>
 				<div class="mobile_menu_block">
-					<button class="call_button" onclick="show_order()">Заказать звонок</button>
+					<a rel="nofollow" href="tel:89270599109">Наш номер: 8 (927) 059-91-09</a>
 				</div>
 			</div>
 		</header>
@@ -84,7 +97,8 @@
 			<div id="order_background" onclick="close_order()"></div>
 			<div id="order_div">
 				<div id="order_h2_div">
-					<h2 class="order_h2">Заказать звонок</h2>
+					<div class="order_header_child"><h2 class="order_h2">Заказать звонок</h2></div>
+					<div class="order_header_child" id="close_div" onclick="close_order()">✕</div>
 				</div>
 				<div id="order_form_div">
 					<form method="POST" action="/sendcallback" class="order_form">
@@ -171,8 +185,25 @@
 				1. В <a class="a_disc" href="https://altailife.ru/catalog/">каталоге</a> товаров можно ознакомиться с товарами и ценами, приметить нужное.<br><br>
 				2. Заказ можно сделать по телефону, указанному на сайте, или оставить заявку, и продавец-консультант свяжется с вами и уточнит детали заказа. <br><br>
 				3. Вы выбираете способ получения заказа: самовывозом из одного из наших магазинов, либо доставкой курьером Яндекса, она оплачивается отдельно по текущему тарифу.<br><br>
-				4. Оплата заказа осуществляется по нашим реквизитам, по номеру телефона или карты на Сбербанк. <br><br>
+				4. Оплата заказа осуществляется в форме ниже, для этого нужно указать сумму и номер заказа, их вам сообщит продавец-консультант, а также почту, куда мы вышлем чек, и телефон. <br><br>
 				5. При наличии товара в наших магазинах вы получаете заказ в тот же день. При отсутствии товара в Саратове срок доставки увеличивается до 3-4 дней.<br><br>
+				<h1>Оплата заказа</h1>
+				<div id="tinkoff_div">
+					<img src="static/img/tinkoff_logo.png">
+					<script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
+					<form name="TinkoffPayForm" onsubmit="pay(this); return false;">
+  						<input class="tinkoffPayRow" type="hidden" name="terminalkey" value="1612417166275">
+  						<input class="tinkoffPayRow" type="hidden" name="frame" value="false">
+  						<input class="tinkoffPayRow" type="hidden" name="language" value="ru">
+						<input class="tinkoffPayRow" type="hidden" name="receipt" id="rec_id" value='{"EmailCompany": "altai64ru@gmail.com","Taxation": "patent","Items": [{"Name": "Оплата заказа на сайте алтай64.рф","Price": 10000,"Quantity": 1.00,
+  "Amount": 10000,"Tax": "none"}]}'>
+    					<input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" name="amount" id="am_id" required onchange="am_on_input()">
+    					<input class="tinkoffPayRow" type="text" placeholder="Номер заказа" name="order" required>
+    					<input class="tinkoffPayRow" type="text" placeholder="E-mail" name="email">
+    					<input class="tinkoffPayRow" type="text" placeholder="Контактный телефон" name="phone" required>
+    					<input class="tinkoffPayRow tinkoffButton" type="submit" value="Оплатить">
+					</form>
+				</div>
 			</div>
 
 			<div id="text3">
