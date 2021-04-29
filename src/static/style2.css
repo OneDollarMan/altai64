@@ -348,16 +348,18 @@ h2 {
 	border: 1px solid #399f00;
 }
 
+.body_texts {
+    padding: 20pt 25%;
+    line-height: 1.5;
+}
+
 #text2 {
-	line-height: 1.5;
-	background: #f6f6f7;
 	z-index: 10;
-	padding: 20pt 25%;
 }
 
 #text3 {
-	line-height: 1.5;
-	padding: 20pt 25%;
+	background: #f6f6f7;
+	padding: 20pt 15%;
 }
 
 footer {
@@ -377,7 +379,6 @@ footer {
 
 #text_prod {
 	background: white;
-	padding: 20pt 25%;
 }
 
 #prod_grid {
@@ -399,6 +400,25 @@ footer {
 	width: 100%;
 	border-radius: 200pt;
 	border: 2px solid #58c61b;
+}
+
+#mag_imgs img {
+    border: 1px solid black;
+    border-radius: 2pt;
+}
+
+#mag_imgs {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.mag_img {
+    text-align:center;
+    padding: 5pt;
+}
+
+#text4 {
+    background: #f6f6f7;
 }
 
 #tinkoff_div {
@@ -454,13 +474,13 @@ footer {
 		display: block;
 	}
 
-	#text2, #text3, #text_prod, footer {
-		padding: 20pt 5%;
-	}
-
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+
+    .body_texts, footer, #text3 {
+		padding: 20pt 5%;
+	}
 
 	#form_div {
 		display: flex;
@@ -497,7 +517,11 @@ footer {
 	}
 
 	#intro_text {
-	margin-top: 50pt;
+	    margin-top: 50pt;
 	}
+
+	#mag_imgs {
+        grid-template-columns: 100%;
+    }
 
 }
